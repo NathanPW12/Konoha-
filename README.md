@@ -1,0 +1,2 @@
+# Konoha-
+Discord de Konoha
