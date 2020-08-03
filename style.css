@@ -25,7 +25,7 @@ header {
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
-    animation: zoom 25s
+    animation: zoom 25s;
   
 }
 
@@ -51,8 +51,18 @@ header {
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4);
     line-height: 3.5rem;
     margin-bottom: .1rem;
+    animation: moveBanner 1s;
 }
 
+@keyframes moveBanner{
+  0%{
+      transform: translateY(10rem);
+  }
+  100%{
+      transform: translateY(0rem);
+      }
+
+}
 .banner p {
     font-family: "Ubuntu Condensed", serif;
     color: white;
@@ -78,3 +88,4 @@ header {
 .banner button:hover{
   color: gold
 }
+  
