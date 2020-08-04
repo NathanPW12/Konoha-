@@ -1,13 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora&family=Noto+Serif&family=Pacifico&family=Playfair+Display+SC&family=Press+Start+2P&display=swap');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 * {
     margin: 0cm;
     padding: 0cm;
+    list-style: none;
+    text-decoration: none;
 }
 
-header {
+:root{
+  --font-primary: "Baloo 2", serif;
+  --font-secundary: "Ubuntu Condensed", serif;
+  --font-actiob: "Cambria", Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.hamburguer{
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  z-index: 1000;
+  right: 5rem;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.line{
+  width:100%;
+  height:0.1rem;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.1rem 1px black;
+}
+
+headerheader {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -17,7 +46,7 @@ header {
 .img-wrapper {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 8)
+    background-color: rgba(0, 0, 0, 0.9)
 }
 
 .img-wrapper img {
@@ -46,7 +75,7 @@ header {
 .banner h1 {
     color: white;
     font-size: 3rem;
-    font-family: "Baloo 2", serif;
+    font-family: var(--font-primary);
     font-weight: 300;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4);
     line-height: 3.5rem;
@@ -68,7 +97,7 @@ header {
 }
 
 .banner p {
-    font-family: "Ubuntu Condensed", serif;
+    font-family: var(--font-secundary);
     color: white;
     font-size: 1rem;
     text-shadow: .2rem .2rem rgba(0, 0, 0, .4);
@@ -78,7 +107,8 @@ header {
 }
 
 .banner button {
-    font-family: "Ubuntu Condensed", serif;
+    font-family: var(--font-action);
+    font-size: 0.8rem;
     color: white;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -108,3 +138,34 @@ header {
   color: gold
 }
   
+.sidebar{
+  width: 20rem;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.menu{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.menu-item{
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.menu-link{
+  font-family: var(--font-action);
+  color: #848484;
+  font-size: 2rem;
+  transition: color 1s;
+}
+
+.menu-link:hover{
+  color: #B404AE;
+}
