@@ -135,7 +135,7 @@ headerheader {
 }
 
 .banner button:hover{
-  color: gold
+  color: #F781F3;
 }
   
 .sidebar{
@@ -168,4 +168,29 @@ headerheader {
 
 .menu-link:hover{
   color: #B404AE;
+}
+
+.social-media{
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media i{
+  background-color: #AA076B;
+  color: white;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 1s;
+}
+
+.social-media i:hover{
+  background-color: #B404AE;
 }
